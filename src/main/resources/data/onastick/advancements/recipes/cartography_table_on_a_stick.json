@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "onastick:cartography_table_on_a_stick"
+    ]
+  },
+  "criteria": {
+    "has_cartography_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cartography_table"
+            ]
+          }
+        ]
+      }
+    },
+    "has_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stick"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "onastick:cartography_table_on_a_stick"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cartography_table",
+      "has_stick",
+      "has_the_recipe"
+    ]
+  ]
+}

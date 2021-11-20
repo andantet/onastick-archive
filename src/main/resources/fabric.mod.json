@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+
+  "id": "onastick",
+  "version": "${version}",
+  "license": "MIT",
+
+  "name": "On A Stick",
+  "icon": "assets/onastick/icon.png",
+  "description": "Adds things on sticks.",
+
+  "authors": [
+    "andante."
+  ],
+
+  "contact": {
+    "sources": "https://github.com/andantet/onastick",
+    "issues": "https://github.com/andantet/onastick/issues"
+  },
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.andante.onastick.OnAStick"
+    ]
+  },
+  "mixins": [
+    "onastick.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": ">=1.17",
+    "java": ">=16"
+  }
+}
