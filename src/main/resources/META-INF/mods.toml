@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[37,)"
+license="MIT"
+
+[[mods]]
+  modId         = "onastick"
+  version       = "${file.jarVersion}"
+  displayName   = "Adds things on sticks."
+  # updateJSONURL = "https://change.me.example.invalid/updates.json"
+  # displayURL    = "https://change.me.to.your.mods.homepage.example.invalid/"
+  logoFile      = "example.png"
+  authors       = "andante."
+  # credits       = "Thanks for this example mod goes to Java"
+
+  description   = '''
+
+  '''
+
+[[dependencies.onastick]]
+    modId="forge"
+    mandatory=true
+    versionRange="[37,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.onastick]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.17.1,1.18)"
+    ordering="NONE"
+    side="BOTH"

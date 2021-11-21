@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "onastick:loom_on_a_stick"
+    ]
+  },
+  "criteria": {
+    "has_loom": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:loom"
+            ]
+          }
+        ]
+      }
+    },
+    "has_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stick"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "onastick:loom_on_a_stick"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_loom",
+      "has_stick",
+      "has_the_recipe"
+    ]
+  ]
+}
