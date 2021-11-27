@@ -10,7 +10,6 @@ import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
 import net.minecraft.text.Text;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
 public abstract class AbstractOnAStickItem extends Item {
@@ -25,13 +24,13 @@ public abstract class AbstractOnAStickItem extends Item {
         if (world.isClient) {
             return TypedActionResult.success(stack);
         } else {
-            user.openHandledScreen(this.createScreenHandlerFactory(world, user.getBlockPos()));
+            user.openHandledScreen(this.createScreenHandlerFactory());
         }
 
         return super.use(world, user, hand);
     }
 
-    public NamedScreenHandlerFactory createScreenHandlerFactory(World world, BlockPos pos) {
+    public NamedScreenHandlerFactory createScreenHandlerFactory() {
         return new SimpleNamedScreenHandlerFactory(this::createScreenHandler, this.getScreenTitle());
     }
 
