@@ -9,7 +9,8 @@
     "CraftingTableBlockAccessor",
     "GrindstoneBlockAccessor",
     "LoomBlockAccessor",
-    "SmithingTableBlockAccessor"
+    "SmithingTableBlockAccessor",
+    "StonecutterBlockAccessor"
   ],
   "client": [],
   "injectors": {
