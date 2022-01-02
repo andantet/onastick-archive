@@ -17,7 +17,7 @@ apply plugin: 'maven-publish'
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 group = project.maven_group
-archivesBaseName = project.mod_id
+archivesBaseName = project.archives_base_name
 
 version = System.env.GITHUB_ACTIONS == "true"
         ? "${project.mod_version}+build.${System.env.GITHUB_RUN_NUMBER}"
