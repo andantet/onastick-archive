@@ -1,10 +1,12 @@
+//file:noinspection all
+
 plugins {
   id 'fabric-loom' version '0.10-SNAPSHOT'
   id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_16
-targetCompatibility = JavaVersion.VERSION_16
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.mod_id
 group = project.maven_group
@@ -14,16 +16,6 @@ version = System.env.GITHUB_ACTIONS == "true"
         : project.mod_version
 
 repositories {
-  maven {
-    name = "Jitpack"
-    url  = "https://jitpack.io/"
-  }
-
-  maven {
-    name = "Shadew's Maven"
-    url  = "https://maven.shadew.net/"
-  }
-
   maven {
     name = "Gegy's Maven"
     url  = "https://maven.gegy.dev/"
@@ -45,19 +37,12 @@ repositories {
 }
 
 dependencies {
-  // required
   minecraft "com.mojang:minecraft:${project.minecraft_version}"
   mappings "net.fabricmc:yarn:${project.minecraft_version}+build.${project.yarn_build}:v2"
   modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-  // dependencies
   modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
-  modImplementation("com.terraformersmc:modmenu:${project.mod_menu_version}") { exclude group: "net.fabricmc.fabric-api" }
-  // modImplementation("net.shadew:jedt:${project.jedt_version}") { exclude group: "net.fabricmc.fabric-api" }
-
-  // utilities
-  modRuntimeOnly("com.github.joaoh1:OkZoomer:${project.okzoomer_version}") { exclude group: "net.fabricmc.fabric-api" }
+  modImplementation "com.terraformersmc:modmenu:${project.mod_menu_version}"
 }
 
 processResources {
@@ -73,7 +58,7 @@ sourceSets.main.resources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-  it.options.release = 16
+  it.options.release = 17
 }
 
 java {
