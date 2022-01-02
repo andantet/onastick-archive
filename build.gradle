@@ -8,7 +8,7 @@ plugins {
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
-archivesBaseName = project.mod_id
+archivesBaseName = project.archives_base_name
 group = project.maven_group
 
 version = System.env.GITHUB_ACTIONS == "true"
