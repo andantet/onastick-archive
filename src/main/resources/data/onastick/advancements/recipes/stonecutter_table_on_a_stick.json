@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "onastick:stonecutter_on_a_stick"
+    ]
+  },
+  "criteria": {
+    "has_stonecutter": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stonecutter"
+            ]
+          }
+        ]
+      }
+    },
+    "has_stick": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:stick"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "onastick:stonecutter_on_a_stick"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_stonecutter",
+      "has_stick",
+      "has_the_recipe"
+    ]
+  ]
+}
