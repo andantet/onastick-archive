@@ -20,6 +20,6 @@ public class AnvilOnAStickItem extends AbstractOnAStickItem {
 
     @Override
     public Text getScreenTitle() {
-        return AnvilBlockAccessor.getTitle();
+        return AnvilBlockAccessor.getTITLE();
     }
 }

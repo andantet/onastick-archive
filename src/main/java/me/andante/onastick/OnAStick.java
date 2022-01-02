@@ -13,7 +13,6 @@ import org.apache.logging.log4j.Logger;
 public class OnAStick implements ModInitializer {
     public static final String MOD_ID   = "onastick";
     public static final String MOD_NAME = "On A Stick";
-
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
 	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(new Identifier(MOD_ID, "item_group"), () -> new ItemStack(OnAStickItems.CRAFTING_TABLE_ON_A_STICK));

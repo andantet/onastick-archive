@@ -20,6 +20,6 @@ public class LoomOnAStickItem extends AbstractOnAStickItem {
 
     @Override
     public Text getScreenTitle() {
-        return LoomBlockAccessor.getTitle();
+        return LoomBlockAccessor.getTITLE();
     }
 }

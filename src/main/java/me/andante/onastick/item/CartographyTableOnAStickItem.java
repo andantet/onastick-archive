@@ -20,6 +20,6 @@ public class CartographyTableOnAStickItem extends AbstractOnAStickItem {
 
     @Override
     public Text getScreenTitle() {
-        return CartographyTableBlockAccessor.getTitle();
+        return CartographyTableBlockAccessor.getTITLE();
     }
 }

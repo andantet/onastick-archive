@@ -8,7 +8,7 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 @Mixin(SmithingTableBlock.class)
 public interface SmithingTableBlockAccessor {
     @Accessor("SCREEN_TITLE")
-    static Text getTitle() {
+    static Text getTITLE() {
         throw new AssertionError();
     }
 }

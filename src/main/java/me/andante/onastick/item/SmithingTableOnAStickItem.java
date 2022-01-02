@@ -20,6 +20,6 @@ public class SmithingTableOnAStickItem extends AbstractOnAStickItem {
 
     @Override
     public Text getScreenTitle() {
-        return SmithingTableBlockAccessor.getTitle();
+        return SmithingTableBlockAccessor.getTITLE();
     }
 }

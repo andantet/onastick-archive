@@ -20,6 +20,6 @@ public class CraftingTableOnAStickItem extends AbstractOnAStickItem {
 
     @Override
     public Text getScreenTitle() {
-        return CraftingTableBlockAccessor.getTitle();
+        return CraftingTableBlockAccessor.getTITLE();
     }
 }

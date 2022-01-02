@@ -7,8 +7,8 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 
 @Mixin(CartographyTableBlock.class)
 public interface CartographyTableBlockAccessor {
-    @Accessor("TITLE")
-    static Text getTitle() {
+    @Accessor
+    static Text getTITLE() {
         throw new AssertionError();
     }
 }

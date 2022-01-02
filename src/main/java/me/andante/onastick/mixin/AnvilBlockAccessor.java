@@ -7,8 +7,8 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 
 @Mixin(AnvilBlock.class)
 public interface AnvilBlockAccessor {
-    @Accessor("TITLE")
-    static Text getTitle() {
+    @Accessor
+    static Text getTITLE() {
         throw new AssertionError();
     }
 }

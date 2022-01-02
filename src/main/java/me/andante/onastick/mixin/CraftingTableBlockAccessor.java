@@ -7,8 +7,8 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 
 @Mixin(CraftingTableBlock.class)
 public interface CraftingTableBlockAccessor {
-    @Accessor("TITLE")
-    static Text getTitle() {
+    @Accessor
+    static Text getTITLE() {
         throw new AssertionError();
     }
 }

@@ -20,6 +20,6 @@ public class GrindstoneOnAStickItem extends AbstractOnAStickItem {
 
     @Override
     public Text getScreenTitle() {
-        return GrindstoneBlockAccessor.getTitle();
+        return GrindstoneBlockAccessor.getTITLE();
     }
 }
