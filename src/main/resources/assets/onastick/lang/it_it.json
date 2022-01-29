@@ -1,0 +1,12 @@
+{
+  "mod.onastick.name": "On a Stick",
+  "itemGroup.onastick.item_group": "On A Stick",
+
+  "item.onastick.crafting_table_on_a_stick": "Bastone e banco da lavoro",
+  "item.onastick.smithing_table_on_a_stick": "Bastone e banco da forgiatura",
+  "item.onastick.cartography_table_on_a_stick": "Bastone e banco da cartografia",
+  "item.onastick.anvil_on_a_stick": "Bastone e incudine",
+  "item.onastick.loom_on_a_stick": "Bastone e telaio",
+  "item.onastick.grindstone_on_a_stick": "Bastone e mola",
+  "item.onastick.stonecutter_on_a_stick": "Bastone e tagliapietre"
+}
