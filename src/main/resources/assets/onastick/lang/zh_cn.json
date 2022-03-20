@@ -1,0 +1,12 @@
+{
+  "mod.onastick.name": "木棍上的 (On A Stick)",
+  "itemGroup.onastick.item_group": "木棍上的 (On A Stick)",
+
+  "item.onastick.crafting_table_on_a_stick": "木棍上的工作台",
+  "item.onastick.smithing_table_on_a_stick": "木棍上的锻造台",
+  "item.onastick.cartography_table_on_a_stick": "木棍上的制图台",
+  "item.onastick.anvil_on_a_stick": "木棍上的铁砧",
+  "item.onastick.loom_on_a_stick": "木棍上的织布机",
+  "item.onastick.grindstone_on_a_stick": "木棍上的砂轮",
+  "item.onastick.stonecutter_on_a_stick": "木棍上的切石机"
+}
